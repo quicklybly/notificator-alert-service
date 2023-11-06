@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    template:
+      default-topic: alerts
+    consumer:
+      auto-offset-reset: earliest
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
