@@ -8,7 +8,8 @@ import org.springframework.stereotype.Service
 class MailAlertingService {
 
     @KafkaListener(
-        topics = ["alerts"],
+        topics = ["\${spring.kafka.template.default-topic}"],
+        // todo add group id
         groupId = "some-group-id",
         containerFactory = "kafkaListenerContainerFactory"
     )
