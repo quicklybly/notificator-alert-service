@@ -8,3 +8,9 @@ spring:
   jackson:
     serialization:
       WRITE_DATES_AS_TIMESTAMPS: false
+  mail:
+    host: smtp.yandex.ru
+    port: 465
+    protocol: smtps
+    username: mail
+    password: pass
